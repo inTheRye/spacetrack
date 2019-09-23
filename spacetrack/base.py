@@ -168,6 +168,7 @@ class SpaceTrackClient(object):
 
     # These predicates are available for every request class.
     rest_predicates = {
+        Predicate('NORAD_CAT_ID', 'str'),
         Predicate('predicates', 'str'),
         Predicate('metadata', 'enum', values=('true', 'false')),
         Predicate('limit', 'str'),
